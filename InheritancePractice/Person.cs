@@ -60,18 +60,4 @@ namespace InheritancePractice
         }
     }
 
-    public class Program
-    {
-        public static void Main()
-        {
-            var person1 = new Person { Name = "Jan", Age = 21 };
-            var person2 = new Person { Name = "Jan", Age = 21 };
-
-            Console.WriteLine(person1.GetHashCode());
-            Console.WriteLine(person2.GetHashCode());
-            Console.WriteLine(person1.Equals(person2));
-            Console.WriteLine(person1.ToString());
-            Console.WriteLine(person2.ToString());
-        }
-    }
 }
