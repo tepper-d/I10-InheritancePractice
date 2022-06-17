@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace InheritancePractice
 {
-    /*********************************************************
+/*********************************************************
  * CIS 123: Introduction to Object-Oriented Programming
  * Module 10: Inheritance Assignment (Individual)
  * Dominique Tepper, 16JUN2022
  * 
- * 1-C/3. Complete the derived Faculty Class
+ * 1-C/3. Complete the derived Admin Class
  *          i. facultyID       private string
  *         ii. use a getter and setter
  *        iii. define 2 constructors
@@ -34,7 +34,7 @@ namespace InheritancePractice
                 this.facultyID = facultyID;
             }
 
-            //ii. Student getter & setter
+            //ii. Faculty getter & setter
             public string FacultyID
             {
                 get
@@ -47,10 +47,10 @@ namespace InheritancePractice
                 }
             }
 
-            //iv. StudentWrite() as an override of the PersonWrite() method
+            //iv. FacultyWrite() as an override of the PersonWrite() method
             public override string PersonWrite() =>
                 base.PersonWrite() +
-                "FID: " + this.facultyID;
+                "Faculty ID: " + this.facultyID;
         }
     }
 }
