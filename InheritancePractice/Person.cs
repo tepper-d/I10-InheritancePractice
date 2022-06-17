@@ -10,22 +10,22 @@ using System.Threading.Tasks;
  * Dominique Tepper, 16JUN2022
  * 
  * 1. Complete the base and derived classes:
- *      a. Person       base
- *      b. Student      derived
- *      c. Faculty      derived
- *      d. Admin        derived
- *      e. Staff        derived
+ *      a.   Person       base
+ *      b/2. Student      derived
+ *      c/3. Faculty      derived
+ *      d/4. Admin        derived
+ *      e/5. Staff        derived
  * ******************************************************/
 
 namespace InheritancePractice
 {
 /* ******************************************************
- * 1-A. Person class properties
+ * 1-A Person class properties
  *          firstName   string
  *          lastName    string
  *          email       string    
  *      Method
- *      a. PersonWrite
+ *          a. PersonWrite
  * ********************************* Tepper, 06JUN2022 */
     public class Person
     {
