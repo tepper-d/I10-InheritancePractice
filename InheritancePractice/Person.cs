@@ -29,9 +29,70 @@ namespace InheritancePractice
  * ********************************* Tepper, 06JUN2022 */
     public class Person
     {
-        public string firstName { get; set; }
-        public string lastName { get; set; }
-        public string email { get; set; }
+        public string firstName;
+        public string lastName;
+        public string email;
+
+        public Person() { }
+
+        public Person(string firstName, string lastName, string email)
+        {
+            this.FirstName = firstName;
+            this.LastName = lastName;
+            this.Email = email;
+        }
+
+        public string FirstName
+        {
+            get
+            {
+                return firstName;
+            }
+            set
+            {
+                if (value.Length > 50)
+                {
+                    throw new ArgumentException(
+                        "First name must not exceed 50 characters", "Input Error");
+                }
+                firstName = value;
+            }
+        }
+
+        public string LastName
+        {
+            get 
+            { 
+                return lastName; 
+            }
+            set
+            {
+                if (value.Length > 60)
+                {
+                    throw new ArgumentException(
+                        "Last name must not exceed 60 characters", "Input Error");
+                }
+                lastName = value;
+            }
+        }
+
+        public string Email
+        {
+            get
+            {
+                return email;
+            }
+            set
+            {
+                if (value.Length > 70)
+                {
+                    throw new ArgumentException(
+                        "Email must not exceed 70 characters", "Input Error");
+                }
+                email = value;
+            }
+        }
+
 
         public override bool Equals(object obj)
         {
@@ -46,7 +107,7 @@ namespace InheritancePractice
             return Tuple.Create(firstName, lastName, email).GetHashCode();
         }
 
-        public override string ToString()
+        public virtual string PersonWrite()
         {
             return $"Person(" +
                 $"FirstName='{firstName}', " +
@@ -54,10 +115,11 @@ namespace InheritancePractice
                 $"Email={email})";
         }
 
-        public void SayHello()
+        /*public void SayHello()
         {
             Console.WriteLine($"Hi, I'm {firstName} {lastName}!");
-        }
+            Console.WriteLine($"Email me at {email} anytime.");
+        }*/
     }
 
 }
