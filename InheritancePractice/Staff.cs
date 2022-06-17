@@ -49,9 +49,14 @@ namespace InheritancePractice
             }
 
             //iv. StaffWrite() as an override of the PersonWrite() method
-            public override string PersonWrite() =>
+            /*public override string PersonWrite() =>
                 base.PersonWrite() +
-                "Staff ID: " + this.staffID;
+                "Staff ID: " + this.staffID;*/
+
+            public void StaffWrite()
+            {
+                Console.WriteLine($"My name is {FirstName} {LastName}. Student ID is {StaffID}.");
+            }
         }
     }
 }

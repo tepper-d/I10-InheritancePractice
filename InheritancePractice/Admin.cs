@@ -49,9 +49,13 @@ namespace InheritancePractice
             }
 
             //iv. AdminWrite() as an override of the PersonWrite() method
-            public override string PersonWrite() =>
+            /*public override string PersonWrite() =>
                 base.PersonWrite() +
-                "Admin ID: " + this.adminID;
+                "Admin ID: " + this.adminID;*/
+            public void AdminWrite()
+            {
+                Console.WriteLine($"My name is {FirstName} {LastName}. Admin ID is {AdminID}.");
+            }
         }
     }
 }
