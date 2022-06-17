@@ -9,7 +9,7 @@ using System.Threading.Tasks;
  * Dominique Tepper, 16JUN2022
  * 
  * 1-B/2. Complete the derived Student Class
- *          i. studentID       private string
+ *          i. facultyID       private string
  *         ii. use a getter and setter
  *        iii. define 2 constructors
  *         iv. StudentWrite    method
@@ -47,6 +47,6 @@ namespace InheritancePractice
         //iv. StudentWrite() as an override of the PersonWrite() method
         public override string PersonWrite() => 
             base.PersonWrite() + 
-            " SID " + this.studentID;
+            "SID: " + this.studentID;
     }
 }
