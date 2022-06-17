@@ -97,7 +97,7 @@ namespace InheritancePractice
         }
 
         //Tepper, 16JUN2022
-        public override bool Equals(object obj)
+        /*public override bool Equals(object obj)
         {
             return obj is Person person &&
                firstName == person.firstName &&
@@ -105,10 +105,10 @@ namespace InheritancePractice
                email == person.email;
         }
 
-        public override int GetHashCode()
+        /*public override int GetHashCode()
         {
             return Tuple.Create(firstName, lastName, email).GetHashCode();
-        }
+        }*/
 
         //Tepper, 16JUN2022
         public virtual string PersonWrite()
