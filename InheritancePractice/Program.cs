@@ -13,8 +13,8 @@ using System.Threading.Tasks;
  * 1. Complete the base and derived classes:
  *      a. Person       base
  *      b. Student      derived
- *      c. Admin      derived
- *      d. Admin        derived
+ *      c. Staff      derived
+ *      d. Staff        derived
  *      e. Staff        derived
  * ******************************************************/
 

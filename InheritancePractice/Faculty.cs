@@ -11,7 +11,7 @@ namespace InheritancePractice
  * Module 10: Inheritance Assignment (Individual)
  * Dominique Tepper, 16JUN2022
  * 
- * 1-C/3. Complete the derived Admin Class
+ * 1-C/3. Complete the derived Staff Class
  *          i. facultyID       private string
  *         ii. use a getter and setter
  *        iii. define 2 constructors
