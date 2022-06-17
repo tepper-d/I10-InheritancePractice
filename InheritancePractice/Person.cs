@@ -26,7 +26,7 @@ namespace InheritancePractice
  *          email       string    
  *      Method
  *          a. PersonWrite
- * ********************************* Tepper, 06JUN2022 */
+ * ********************************* Tepper, 16JUN2022 */
     public class Person
     {
         public string firstName;
@@ -42,6 +42,7 @@ namespace InheritancePractice
             this.Email = email;
         }
 
+        //Tepper, 16JUN2022
         public string FirstName
         {
             get
@@ -59,6 +60,7 @@ namespace InheritancePractice
             }
         }
 
+        //Tepper, 16JUN2022
         public string LastName
         {
             get 
@@ -76,6 +78,7 @@ namespace InheritancePractice
             }
         }
 
+        //Tepper, 16JUN2022
         public string Email
         {
             get
@@ -93,7 +96,7 @@ namespace InheritancePractice
             }
         }
 
-
+        //Tepper, 16JUN2022
         public override bool Equals(object obj)
         {
             return obj is Person person &&
@@ -107,6 +110,7 @@ namespace InheritancePractice
             return Tuple.Create(firstName, lastName, email).GetHashCode();
         }
 
+        //Tepper, 16JUN2022
         public virtual string PersonWrite()
         {
             return $"Person(" +

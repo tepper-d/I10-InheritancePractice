@@ -13,7 +13,7 @@ using System.Threading.Tasks;
  *         ii. use a getter and setter
  *        iii. define 2 constructors
  *         iv. StudentWrite    method
- * ********************************* Tepper, 06JUN2022 */
+ * ********************************* Tepper, 16JUN2022 */
 namespace InheritancePractice
 {
     public class Student : Person
@@ -32,6 +32,7 @@ namespace InheritancePractice
         }
 
         //ii. Student getter & setter
+        //Tepper, 16JUN2022
         public string StudentID
         {
             get 

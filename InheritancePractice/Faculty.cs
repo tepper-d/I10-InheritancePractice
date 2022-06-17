@@ -16,7 +16,7 @@ namespace InheritancePractice
  *         ii. use a getter and setter
  *        iii. define 2 constructors
  *         iv. FacultyWrite    method
- * ********************************* Tepper, 06JUN2022 */
+ * ********************************* Tepper, 16JUN2022 */
     namespace InheritancePractice
     {
         public class Faculty : Person
@@ -35,6 +35,7 @@ namespace InheritancePractice
             }
 
             //ii. Faculty getter & setter
+            //Tepper, 16JUN2022
             public string FacultyID
             {
                 get
